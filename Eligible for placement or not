@@ -1,0 +1,11 @@
+s =["ANU","RAJ","RAM","SAM","ANI","BALU","ROSE","BEN","TOM","ROY"]
+m =[[22,33,98],[45,77,29],[89,87,12],[35,65,29],[55,44,33],[66,22,8],[88,22,13],[99,27,56],[77,38,56],[68,63,69]]
+a =[False,False,True,False,False,False,True,False,False,True]
+
+per = [sum(i)//3 for i in m]
+
+for i in range(10):
+    if a[i] == False and per[i]>40:
+        print(i+1,".",s[i],": ",per[i]," :No Arrear")
+    else:
+        print(s[i],"is not eligible for placement as avg is",per[i],"and has an arrear")  
