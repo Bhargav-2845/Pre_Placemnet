@@ -1,0 +1,10 @@
+a =[20,123,56,21,55,66,88,120,34,67,90]
+
+for i in a:
+    b = [int (j) for j in str(i)]
+    if sum(b) %2 ==0:
+        print(i,":",True)
+    else:
+        print(i,":",False)
+        
+# To find if the is sum of the digits are even or odd if even return true else false
