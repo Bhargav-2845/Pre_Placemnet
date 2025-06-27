@@ -1,0 +1,36 @@
+class Employee:
+    com = "Google"
+    taxPercentage = 10
+    profit = 50000
+
+    def __init__(self,Name,Age,salary,SharePer):
+        self.Name = Name
+        self.Age = Age
+        self.salary = salary
+        self.tax = 0
+        self.SharePer = SharePer
+        self.Share = 0
+
+    def display(self):
+        self.cal_share()
+        self.cal_tax()
+        print("Name:",self.Name)
+        print("Age:",self.Age)
+        print("company:",Employee.com)
+        print("Tax to pay:",self.tax)
+        print("Share From Company:",self.Share)
+    
+    def cal_tax(self):
+        self.tax = self.salary * Employee.taxPercentage*0.01
+    
+    def cal_share(self):
+        self.Share = Employee.profit * self.SharePer*0.01
+
+e1 = Employee("Ram",23,50000,12)
+e2 = Employee("Pope",25,45000,11)
+e3 = Employee("Jagan",45,75000,20)
+e1.display()
+print("==================")
+e2.display()
+print("===================")
+e3.display()
