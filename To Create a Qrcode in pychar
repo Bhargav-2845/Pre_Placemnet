@@ -1,0 +1,13 @@
+import qrcode
+
+msg = "Hello everyone Welcome to my qrcode"
+
+r = qrcode.QRCode()
+r.add_data(msg)
+r.make(fit=True)
+
+a = r.make_image(fill_color="black", back_color="white")
+a.save("Bhargav.png")
+
+print("Img is saved correctly")
+# pip install qrcode => Write this command on terminal
