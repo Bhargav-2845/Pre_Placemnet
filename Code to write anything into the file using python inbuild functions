@@ -1,0 +1,4 @@
+file=open("DAY10.txt","w")
+file.write("Hello everyone how r u")
+file.close()
+print("File manipulation done successfully")
