@@ -1,0 +1,17 @@
+import matplotlib.pyplot as plt
+
+# Sample data
+x = [1, 2, 3, 4, 5]
+y = [2, 10,3,5,1]
+
+# Create a line plot
+plt.plot(x, y, label='Line Graph', color='blue', marker='o')
+
+# Add titles and labels
+plt.title('Simple Line Graph')
+plt.xlabel('X Axis')
+plt.ylabel('Y Axis')
+plt.legend()
+
+# Show the graph
+plt.show()
